@@ -1,0 +1,31 @@
+#root {
+
+}
+
+.container {
+    margin: 10px;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.chatstring {
+
+}
+
+.chatstring > input {
+    width: 82%;
+    margin: 5px;
+    height: 26px;
+    font-size: 14px;
+}
+
+.chatstring > button {
+    margin: 5px;
+    height: 26px;
+    font-size: 14px;
+}
+
+.chatwindow {
+    margin: 5px;
+}
