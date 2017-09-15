@@ -1,3 +1,5 @@
+.idea
 node_modules
 commit.sh
 package-lock.json
+*.log

@@ -21,6 +21,12 @@ https://docs.docker.com/installation/
 
 http://docs.docker.com/compose/install/
 
+### Add User to Docker Group
+
+sudo usermod -aG docker ${username}
+
+su - $USER
+
 ### Install the app's
 
 In the project ./book/dev/ (where the `Makefile` file is located), run:
@@ -30,6 +36,7 @@ In the project ./book/dev/ (where the `Makefile` file is located), run:
 ```
 make build_all
 ```
+(ctrl+c for continue)
 
 ##### 2. bootstrap
 

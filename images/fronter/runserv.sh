@@ -2,3 +2,4 @@
 # ...
 cd /$PROJECT
 npm start
+J
