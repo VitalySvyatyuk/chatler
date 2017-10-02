@@ -6,10 +6,10 @@ import './App.css';
 function ChatString(props) {
   return (
     <div className="chatstring">
-      <input type="text" name="chatstring" />
+      <input onChange={props.onChange} type="text" name="chatstring" value={props.message}/>
       <button onClick={props.onClick} type="button">Send</button>
     </div>
-  )
+  )  
 }
 
 // Window Component
@@ -29,23 +29,37 @@ class Chat extends Component {
   constructor() {
     super();
     this.state = {
-      phrases: ["Hello"]
+      phrases: ["First phrase"],
+      message: "Hello"
     }
   }
 
   handleClick() {
     const newArray = this.state.phrases.slice()
-    newArray.unshift("Add something")
+    newArray.unshift(this.state.message)
     this.setState({
-        phrases: newArray
+      phrases: newArray,
+      message: ""
+    })
+  }
+
+  handleChange(e) {
+    this.setState({
+      message: e.target.value
     })
   }
 
   render() {
     return (
       <div className="container">
-        <ChatString onClick={val => this.handleClick()} />
-        <ChatWindow value={this.state.phrases} />
+        <ChatString 
+          onClick={this.handleClick.bind(this)}
+          message={this.state.message}
+          onChange={this.handleChange.bind(this)}
+          />
+        <ChatWindow 
+          value={this.state.phrases} 
+          />
       </div>
     );
   }
