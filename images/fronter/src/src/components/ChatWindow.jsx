@@ -1,3 +1,5 @@
+import React from 'react';
+
 function ChatWindow(props) {
   const phrases = props.value.map((phrase, index) => {
     return (

@@ -1,3 +1,5 @@
+import React from 'react';
+
 function ChatString(props) {
   return (
     <div className="chatstring">

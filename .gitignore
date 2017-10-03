@@ -3,3 +3,4 @@ node_modules
 commit.sh
 package-lock.json
 *.log
+.DS_Store
