@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
 import './App.css';
-import ChatString from '../components/ChatString.jsx';
-import ChatWindow from '../components/ChatWindow.jsx';
+import ChatString from '../components/ChatString';
+import ChatWindow from '../components/ChatWindow';
 
 
 export default class Chat extends Component {

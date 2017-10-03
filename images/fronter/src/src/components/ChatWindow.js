@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ChatWindow(props) {
+export default function ChatWindow(props) {
   const phrases = props.value.map((phrase, index) => {
     return (
       <div key={index} className="chatwindow">
@@ -10,5 +10,3 @@ function ChatWindow(props) {
   });
   return <div>{phrases}</div>
 };
-
-export default ChatWindow;
